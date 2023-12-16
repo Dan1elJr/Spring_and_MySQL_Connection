@@ -19,7 +19,9 @@ public class Instantiation implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Usuario usr = new Usuario(null,"Daniel",24);
 		Usuario usr2 = new Usuario(null,"Shyrleimara",23);
-		repo.saveAll(Arrays.asList(usr,usr2));
+		Usuario usr3 = new Usuario(null,"José",60);
+		
+		repo.saveAll(Arrays.asList(usr,usr2,usr3));
 		
 		
 	}
